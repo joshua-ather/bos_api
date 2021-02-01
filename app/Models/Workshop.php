@@ -41,4 +41,9 @@ class Workshop extends Model
 
     protected $primaryKey = 'workshop_id';
 
+    public function user()
+    {
+        return $this->hasMany('App\Models\User');
+    }
+
 }

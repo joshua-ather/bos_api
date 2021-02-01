@@ -48,4 +48,8 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
 
     protected $primaryKey = 'user_id';
 
+    public function workshop()
+    {
+        return $this->belongsTo('App\Models\Workshop');
+    }
 }
