@@ -24,7 +24,7 @@ function getDataUser()
         'token'         => Hash::make('putri_rahayu@gmail.com'.date("Y-m-d H:i:s")),
         'name'          => 'Putri Rahayu',
         'email'         => 'putri_rahayu@gmail.com',
-        'national_id'   => '318642008064592',
+        'national_id'   => '3186420080645926',
         'workshop_name' => 'BOS Bintaro',
         'status_active' => 1,
       ],
