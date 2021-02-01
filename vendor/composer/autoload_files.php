@@ -28,4 +28,5 @@ return array(
     'b6b991a57620e2fb6b2f66f03fe9ddc2' => $vendorDir . '/symfony/string/Resources/functions.php',
     'bee9632da3ca00a99623b9c35d0c4f8b' => $vendorDir . '/laravel/lumen-framework/src/helpers.php',
     '9ec8389fac6ff3e81c41995706e70c49' => $baseDir . '/app/helpers/datadummy.php',
+    '9514b27e8ca1531896c14b38c3806d4f' => $baseDir . '/app/helpers/response.php',
 );

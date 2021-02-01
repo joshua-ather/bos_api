@@ -20,7 +20,8 @@
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "app/helpers/datadummy.php"
+            "app/helpers/datadummy.php",
+            "app/helpers/response.php"
         ]
     },
     "autoload-dev": {
