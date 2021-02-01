@@ -36,4 +36,13 @@ class UserController extends Controller
         return responseJSON(3, 'OK', 'Data successfully created', 201);
     }
 
+    public function showUser()
+    {
+        $username = 'rachmat_hidayat';
+
+        $user = User::with('workshop')->where('username', '=', $username)->first();
+
+        return responseJSON(3, $user, 'Data successfully shown', 200);
+    }
+
 }

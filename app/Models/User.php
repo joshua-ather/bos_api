@@ -50,6 +50,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
 
     public function workshop()
     {
-        return $this->belongsTo('App\Models\Workshop');
+        return $this->belongsTo('App\Models\Workshop', 'workshop_id');
     }
 }

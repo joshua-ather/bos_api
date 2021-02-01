@@ -22,5 +22,7 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->get('create_app-config', 'AppConfigController@createDummyData');
         $router->get('create_inventory', 'InventoryItemController@createDummyData');
         $router->get('create_dummy', 'Controller@runDummyData');
+
+        $router->get('show_user', 'UserController@showUser');
     });
 });
