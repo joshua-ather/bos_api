@@ -26,7 +26,7 @@ class WorkshopController extends Controller
             $workshop->save();
         }
 
-        return response()->json(responseJSON(3, 'OK', 'Data successfully created'), 201);
+        return responseJSON(3, 'OK', 'Data successfully created', 201);
     }
 
 }

@@ -36,7 +36,7 @@ class InventoryItemController extends Controller
             usleep(200000);
         }
 
-        return response()->json(responseJSON(3, 'OK', 'Data successfully created'), 201);
+        return responseJSON(3, 'OK', 'Data successfully created', 201);
     }
 
 }
