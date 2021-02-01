@@ -13,6 +13,10 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+/* Routing url with prefix /api */
+$router->group(['prefix' => 'api'], function () use ($router) {
+    /* Routing url with prefix /v1 */
+    $router->group(['prefix' => 'v1'], function () use ($router) {
+        $router->get('create_workshop', 'WorkshopController@createDummyData');
+    });
 });
