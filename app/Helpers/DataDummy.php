@@ -2,6 +2,9 @@
 
 use \Illuminate\Support\Facades\Hash;
 
+// Defined as Global Function
+
+// To get data dummy user
 function getDataUser()
 {
     $datas = [
@@ -40,6 +43,7 @@ function getDataUser()
     return $datas;
 }
 
+// To get data dummy workshop
 function getDataWorkshop()
 {
     $datas = [
@@ -56,6 +60,7 @@ function getDataWorkshop()
     return $datas;
 }
 
+// To get data dummy appConfig
 function getAppConfig()
 {
     $datas = [
@@ -69,6 +74,7 @@ function getAppConfig()
     return $datas;
 }
 
+// To get data dummy inventoryItem
 function getInventoryItem()
 {
     $datas = [
