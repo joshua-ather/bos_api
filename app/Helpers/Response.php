@@ -1,20 +1,20 @@
 <?php
 
 // To get response message as global functioon
-function responseJSON($code, $data, $message)
+function responseJSON($key, $data, $message, $code)
 {
-    ($code === 3) ? $request = 'success' :
-      (($code === 2) ? $request = 'warning' :
+    ($key === 3) ? $request = 'success' :
+      (($key === 2) ? $request = 'warning' :
         $request = 'error');
 
     $response = [
       'data'   => $data,
       'status' => [
-        'code'    => $code,
+        'code'    => $key,
         'request' => $request,
         'message' => $message,
       ],
     ];
 
-    return $response;
+    return response()->json($response, $code);
 }
