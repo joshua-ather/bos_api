@@ -25,5 +25,6 @@ $router->group(['prefix' => 'api'], function () use ($router) {
 
         $router->get('show_user', 'UserController@showUser');
         $router->get('show_app-config', 'AppConfigController@showAppConfig');
+        $router->get('show_inventory', 'InventoryItemController@showInventory');
     });
 });

@@ -39,4 +39,12 @@ class InventoryItemController extends Controller
         return responseJSON(3, 'OK', 'Data successfully created', 201);
     }
 
+    public function showInventory()
+    {
+        /* Get data inventory with paginating */
+        $inventory = InventoryItem::paginate(10);
+
+        return responseJSON(3, $inventory, 'Data successfully shown', 200);
+    }
+
 }
