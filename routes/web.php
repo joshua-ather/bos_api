@@ -24,5 +24,6 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->get('create_dummy', 'Controller@runDummyData');
 
         $router->get('show_user', 'UserController@showUser');
+        $router->get('show_app-config', 'AppConfigController@showAppConfig');
     });
 });

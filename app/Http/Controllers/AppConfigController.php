@@ -29,4 +29,12 @@ class AppConfigController extends Controller
         return responseJSON(3, 'OK', 'Data successfully created', 201);
     }
 
+    public function showAppConfig()
+    {
+        $appConfig = AppConfig::where('name_company', 'PT. Penta Artha Impresi')->first();
+        $appConfig['picture_company'] = getCompanyPicture($appConfig['picture_company']);
+
+        return responseJSON(3, $appConfig, 'Data successfully shown', 200);
+    }
+
 }
