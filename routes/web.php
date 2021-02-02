@@ -23,8 +23,8 @@ $router->group(['prefix' => 'api'], function () use ($router) {
         $router->get('create_inventory', 'InventoryItemController@createDummyData');
         $router->get('create_dummy', 'Controller@runDummyData');
 
-        $router->get('show_user', 'UserController@showUser');
-        $router->get('show_app-config', 'AppConfigController@showAppConfig');
-        $router->get('show_inventory', 'InventoryItemController@showInventory');
+        $router->post('show_user', 'UserController@showUser');
+        $router->post('show_app-config', 'AppConfigController@showAppConfig');
+        $router->post('show_inventory', 'InventoryItemController@showInventory');
     });
 });
