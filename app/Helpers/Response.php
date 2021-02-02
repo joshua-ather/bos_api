@@ -18,3 +18,9 @@ function responseJSON($key, $data, $message, $code)
 
     return response()->json($response, $code);
 }
+
+// To get company picture as global function
+function getCompanyPicture($value)
+{
+    return env('APP_URL') . $value;
+}
