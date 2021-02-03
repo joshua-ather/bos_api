@@ -22,5 +22,5 @@ function responseJSON($key, $data, $message, $code)
 // To get company picture as global function
 function getCompanyPicture($value)
 {
-    return env('APP_URL') . $value;
+    return 'http://127.0.0.1:8000' . $value;
 }
