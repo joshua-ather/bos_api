@@ -1,0 +1,32 @@
+[2021-01-30 23:11:00] local.ERROR: Call to undefined function str_random() {"exception":"[object] (Error(code: 0): Call to undefined function str_random() at C:\\Program Files\\xampp\\htdocs\\bos_api\outes\\web.php:21)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): Closure->{closure}()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Object(Closure), Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Object(Closure), Array, NULL)
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(299): Illuminate\\Container\\Container->call(Object(Closure), Array)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#12 {main}
+"} 
+[2021-01-30 23:18:39] local.ERROR: Class 'Str' not found {"exception":"[object] (Error(code: 0): Class 'Str' not found at C:\\Program Files\\xampp\\htdocs\\bos_api\outes\\web.php:21)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): Closure->{closure}()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(81): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Object(Closure), Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Object(Closure), Array, NULL)
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(299): Illuminate\\Container\\Container->call(Object(Closure), Array)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#12 {main}
+"} 

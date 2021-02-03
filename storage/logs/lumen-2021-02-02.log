@@ -1,0 +1,12 @@
+[2021-02-02 07:20:46] local.ERROR: Call to undefined method Laravel\Lumen\Routing\Router::view() {"exception":"[object] (Error(code: 0): Call to undefined method Laravel\\Lumen\\Routing\\Router::view() at C:\\Program Files\\xampp\\htdocs\\bos_api\outes\\web.php:28)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\outes\\web.php(29): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\outes\\web.php(30): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\bootstrap\\app.php(112): require('C:\\\\Program File...')
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Router.php(62): {closure}(Object(Laravel\\Lumen\\Routing\\Router))
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\bootstrap\\app.php(113): Laravel\\Lumen\\Routing\\Router->group(Array, Object(Closure))
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(14): require('C:\\\\Program File...')
+#8 {main}
+"} 

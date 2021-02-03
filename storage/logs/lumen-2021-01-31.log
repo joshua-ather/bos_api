@@ -1,0 +1,186 @@
+[2021-01-31 08:30:53] local.ERROR: Command "make:model" is not defined.
+
+Did you mean one of these?
+    make:migration
+    make:seeder {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:model\" is not defined.
+
+Did you mean one of these?
+    make:migration
+    make:seeder at C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\symfony\\console\\Application.php:675)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\symfony\\console\\Application.php(254): Symfony\\Component\\Console\\Application->find('make:model')
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\symfony\\console\\Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-31 09:54:29] local.ERROR: Call to undefined function App\Http\Controllers\bcrypt() {"exception":"[object] (Error(code: 0): Call to undefined function App\\Http\\Controllers\\bcrypt() at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:30)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->create()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'create', Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2021-01-31 09:54:51] local.ERROR: Array to string conversion {"exception":"[object] (ErrorException(code: 0): Array to string conversion at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:39)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php(39): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Array to string...', 'C:\\\\Program File...', 39, Array)
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->create()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'create', Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#15 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2021-01-31 09:55:07] local.ERROR: Undefined offset: 1 {"exception":"[object] (ErrorException(code: 0): Undefined offset: 1 at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:39)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php(39): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined offse...', 'C:\\\\Program File...', 39, Array)
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->create()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'create', Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#15 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2021-01-31 09:55:13] local.ERROR: Undefined offset: 0 {"exception":"[object] (ErrorException(code: 0): Undefined offset: 0 at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:39)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php(39): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(8, 'Undefined offse...', 'C:\\\\Program File...', 39, Array)
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->create()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'create', Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#15 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#16 {main}
+"} 
+[2021-01-31 12:30:28] local.ERROR: Call to undefined function App\Http\Controllers\getDataUser() {"exception":"[object] (Error(code: 0): Call to undefined function App\\Http\\Controllers\\getDataUser() at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:16)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->createDummyData()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'createDummyData', Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2021-01-31 12:31:46] local.ERROR: Call to undefined function App\Http\Controllers\getDataUser() {"exception":"[object] (Error(code: 0): Call to undefined function App\\Http\\Controllers\\getDataUser() at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:16)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->createDummyData()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'createDummyData', Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2021-01-31 12:42:14] local.ERROR: Call to undefined function App\Providers\app_path() {"exception":"[object] (Error(code: 0): Call to undefined function App\\Providers\\app_path() at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Providers\\HelperServiceProvider.php:16)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Application.php(233): App\\Providers\\HelperServiceProvider->register()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\bootstrap\\app.php(99): Laravel\\Lumen\\Application->register(Object(App\\Providers\\HelperServiceProvider))
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(14): require('C:\\\\Program File...')
+#3 {main}
+"} 
+[2021-01-31 12:49:47] local.ERROR: Call to undefined function App\Providers\app_path() {"exception":"[object] (Error(code: 0): Call to undefined function App\\Providers\\app_path() at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Providers\\HelperServiceProvider.php:16)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Application.php(233): App\\Providers\\HelperServiceProvider->register()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\bootstrap\\app.php(99): Laravel\\Lumen\\Application->register(Object(App\\Providers\\HelperServiceProvider))
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(14): require('C:\\\\Program File...')
+#3 {main}
+"} 
+[2021-01-31 12:50:05] local.ERROR: Call to undefined function App\Http\Controllers\getDataUser() {"exception":"[object] (Error(code: 0): Call to undefined function App\\Http\\Controllers\\getDataUser() at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:17)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->createDummyData()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'createDummyData', Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 
+[2021-01-31 12:50:41] local.ERROR: Call to undefined function App\Helpers\DataDummy\getDataUser() {"exception":"[object] (Error(code: 0): Call to undefined function App\\Helpers\\DataDummy\\getDataUser() at C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Controllers\\UserController.php:17)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(36): App\\Http\\Controllers\\UserController->createDummyData()
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Util.php(40): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Laravel\\Lumen\\Application), Array, Object(Closure))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(610): Illuminate\\Container\\BoundMethod::call(Object(Laravel\\Lumen\\Application), Array, Array, NULL)
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(386): Illuminate\\Container\\Container->call(Array, Array)
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(352): Laravel\\Lumen\\Application->callControllerCallable(Array, Array)
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(326): Laravel\\Lumen\\Application->callLumenController(Object(App\\Http\\Controllers\\UserController), 'createDummyData', Array)
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(279): Laravel\\Lumen\\Application->callControllerAction(Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(264): Laravel\\Lumen\\Application->callActionOnArrayBasedRoute(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(166): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(426): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#15 {main}
+"} 

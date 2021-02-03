@@ -1,0 +1,64 @@
+[2021-02-03 11:45:29] local.ERROR: Command "make:middleware" is not defined.
+
+Did you mean one of these?
+    make:migration
+    make:seeder {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:middleware\" is not defined.
+
+Did you mean one of these?
+    make:migration
+    make:seeder at C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\symfony\\console\\Application.php:675)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\symfony\\console\\Application.php(254): Symfony\\Component\\Console\\Application->find('make:middleware')
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\symfony\\console\\Application.php(166): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\console\\Application.php(93): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Console\\Kernel.php(116): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\artisan(35): Laravel\\Lumen\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-02-03 11:54:49] local.ERROR: Target class [cors.options] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [cors.options] does not exist. at C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php:832)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(712): Illuminate\\Container\\Container->build('cors.options')
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(651): Illuminate\\Container\\Container->resolve('cors.options', Array)
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Application.php(300): Illuminate\\Container\\Container->make('cors.options', Array)
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(156): Laravel\\Lumen\\Application->make('cors.options')
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(423): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(260): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(234): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(170): Laravel\\Lumen\\Application->handleDispatcherResponse(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(48): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Middleware\\CorsMiddleware.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(167): App\\Http\\Middleware\\CorsMiddleware->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#15 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(423): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#16 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#17 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#18 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#19 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class cors.options does not exist at C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php:830)
+[stacktrace]
+#0 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(830): ReflectionClass->__construct('cors.options')
+#1 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(712): Illuminate\\Container\\Container->build('cors.options')
+#2 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\container\\Container.php(651): Illuminate\\Container\\Container->resolve('cors.options', Array)
+#3 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Application.php(300): Illuminate\\Container\\Container->make('cors.options', Array)
+#4 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(156): Laravel\\Lumen\\Application->make('cors.options')
+#5 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#6 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#7 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(423): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#8 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(260): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#9 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(234): Laravel\\Lumen\\Application->handleFoundRoute(Array)
+#10 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(170): Laravel\\Lumen\\Application->handleDispatcherResponse(Array)
+#11 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(48): Laravel\\Lumen\\Application->Laravel\\Lumen\\Concerns\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#12 C:\\Program Files\\xampp\\htdocs\\bos_api\\app\\Http\\Middleware\\CorsMiddleware.php(29): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#13 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(167): App\\Http\\Middleware\\CorsMiddleware->handle(Object(Laravel\\Lumen\\Http\\Request), Object(Closure))
+#14 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Routing\\Pipeline.php(30): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#15 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\illuminate\\pipeline\\Pipeline.php(103): Laravel\\Lumen\\Routing\\Pipeline->Laravel\\Lumen\\Routing\\{closure}(Object(Laravel\\Lumen\\Http\\Request))
+#16 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(423): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(172): Laravel\\Lumen\\Application->sendThroughPipeline(Array, Object(Closure))
+#18 C:\\Program Files\\xampp\\htdocs\\bos_api\\vendor\\laravel\\lumen-framework\\src\\Concerns\\RoutesRequests.php(109): Laravel\\Lumen\\Application->dispatch(NULL)
+#19 C:\\Program Files\\xampp\\htdocs\\bos_api\\public\\index.php(28): Laravel\\Lumen\\Application->run()
+#20 {main}
+"} 
